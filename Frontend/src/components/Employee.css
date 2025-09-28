@@ -1,0 +1,140 @@
+.employee-container {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.employee-navbar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.employee-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.employee-nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.employee-nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.employee-nav-links a:hover {
+  color: #facc15;
+}
+
+/* Table Box */
+.employee-table-box {
+  margin: 120px auto 40px auto; /* below navbar */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.employee-table-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f7f7f7;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+th {
+  background: rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Input in edit mode */
+td input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #facc15;
+}
+
+/* Buttons */
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.btn.edit {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.edit:hover {
+  background: #1e40af;
+}
+
+.btn.save {
+  background: #22c55e;
+  color: white;
+}
+
+.btn.save:hover {
+  background: #15803d;
+}
+
+.btn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn.delete:hover {
+  background: #b91c1c;
+}

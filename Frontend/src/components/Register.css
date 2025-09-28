@@ -1,0 +1,177 @@
+/* ===========================
+   Background container
+   =========================== */
+.register-container {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; /* background image covers full screen */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ===========================
+   Dark overlay on background
+   =========================== */
+.register-overlay {
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent black */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===========================
+   Navbar
+   =========================== */
+.register-navbar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.4); /* transparent black navbar */
+  color: white; /* white text */
+  position: sticky;
+  top: 0;
+}
+
+.register-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.register-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.register-nav-links a {
+  color: white; /* white link text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-nav-links a:hover {
+    color: #facc15; /* gold */
+ /* gold on hover */
+}
+
+/* ===========================
+   Register card box
+   =========================== */
+/* ===========================
+   Register card box
+   =========================== */
+.register-box {
+  margin: auto; /* center in screen */
+  background: rgba(200, 200, 200, 0.2); /* 🔹 light grey transparent background */
+  backdrop-filter: blur(15px); /* blur glass effect */
+  border-radius: 20px;
+  padding: 40px;
+  width: 360px;
+  text-align: center;
+  color: #fff; /* white text */
+  box-shadow: 0 8px 32px rgba(236, 76, 239, 0.4); /* shadow */
+  background: rgba(0, 0, 0, 0.4); /* transparent black navbar */
+}
+.register-logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #facc15; /* gold accent */
+}
+
+.register-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;  /* ALL CAPS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between emoji and text */
+}
+
+
+/* ===========================
+   Form and Input Fields
+   =========================== */
+.register-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-box input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(113, 119, 120, 0.8); /* dark navy input background */
+  color: #f2efef;/* gold text inside input */
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 2px black solid;
+}
+
+.register-box input::placeholder {
+  color: #cbd5e1; /* light gray placeholder text */
+}
+
+.register-box input:focus {
+  background: rgba(85, 14, 64, 0.9); /* blue background when focused */
+  color: #fff; /* white text when typing */
+  box-shadow: 0 0 10px rgba(215, 37, 235, 0.8); /* glowing blue shadow */
+}
+
+/* ===========================
+   Submit Button
+   =========================== */
+.register-box button {
+  background: #0a0a0b; /* blue button */
+  color: white; /* white text */
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-box button:hover {
+  background: #a81eaf; /* darker blue on hover */
+}
+
+/* ===========================
+   Messages
+   =========================== */
+.success {
+  color: #4ade80; /* green success message */
+  margin-top: 10px;
+}
+
+.error {
+  color: #f87171; /* red error message */
+  margin-top: 10px;
+}
+
+/* ===========================
+   Register link (bottom text)
+   =========================== */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgb(35, 21, 78); /* black text "Already have an account?" */
+}
+
+.register-link a {
+  color: #2563eb; /* blue link text */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* underline on hover */
+}
