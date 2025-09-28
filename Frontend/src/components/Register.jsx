@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import api from "../api";  // 👈 path adjust karo agar file location different hai
+
 import { Link } from "react-router-dom";
 import "./Register.css";
 import forestBg from "./image/frontpage.png"; // ✅ same background as login
